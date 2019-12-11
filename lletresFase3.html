@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var nom = "pabloschvarzmanmuñoz"; //nombre y apellidos para que tenga repeticiones
+
+        var nomSplit = nom.split(""); //convertimos el texto en variables
+ 
+        var nomMap = new Map(); //declaramos el Map
+
+        var  v = 1;
+
+        for (var i = 0; i < nomSplit.length; i++){
+           
+            if(nomMap.has(nomSplit[i])){
+            nomMap.set(nomSplit[i], nomMap.get(nomSplit[i])+1);
+             
+            }else
+            nomMap.set(nomSplit[i],+1);
+            
+        }
+
+        for(let[key,value] of nomMap){
+            console.log(key +" : " + value);
+        }
+
+        
+       
+
+        
+
+
+    
+    </script>
+    
+</body>
+</html>
