@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var nom = "pab/l5o"; //introducimos el texto 
+        var voc = "aeiou"; //definimos las vocales 
+        var con = "bcdfghjklmnpqrstvwxyz"; //definimos las consonantes
+
+
+
+        for (var i = 0; i < nom.length; i++) { //iteramos y comparamos entre vocales, consonantes y otros caracteres
+            if (voc.includes(nom[i])) {
+                console.log("He trobat la vocal: " + nom[i]);
+            } else if (con.includes(nom[i])) {
+
+                console.log("He trobat la consonant: " + nom[i]);
+            } else {
+                console.log("Els noms de persones no contenen el número/caracter: " + nom[i]);
+            }
+        }
+    </script>
+</body>
+</html>
